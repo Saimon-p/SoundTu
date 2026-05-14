@@ -1,0 +1,546 @@
+body {
+  background-color: var(--color-background);
+}
+
+/* topbar start*/
+#christmas-ad {
+  width: 100%;
+  height: 2rem;
+  background-color: var(--subfooter-bg);
+  display: flex;
+  align-items: center;
+  overflow-x: hidden;
+}
+
+#christmas-ad p {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  font-family: inter;
+  width: 100%;
+  color: var(--hover-white);
+  font-size: clamp(0.625rem, 1vw, 1rem);
+  animation: ad-slider 25s linear infinite;
+  transform: translateX(100%);
+  white-space: nowrap;
+}
+/* topbar End*/
+
+/* Main Content Start */
+#main-content {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: start;
+  padding-bottom: 5rem;
+  background-image: url(../img/Immagine2.webp);
+  background-repeat: repeat;
+  background-position: top;
+  background-size: cover;
+}
+
+#main-content #slogan-box {
+  padding-top: 5%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#main-content #slogan-box p {
+  color: var(--nav-border-color);
+  font-family: "lexend";
+  margin: 0;
+  animation: slideUp 0.5s forwards;
+  cursor: default;
+}
+
+.slogan-animation-p-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 70%;
+  margin-bottom: 30px;
+  overflow-y: hidden;
+}
+
+#main-content #slogan-box #first-child {
+  font-size: clamp(10.5px, 2.222vw, 1.7rem);
+  text-align: center;
+  margin: 0;
+}
+
+.slogan-animation-box {
+  width: 80%;
+  border-bottom: 2px solid var(--nav-border-color);
+  border-top: 2px solid var(--nav-border-color);
+  overflow: hidden;
+}
+
+#main-content #slogan-box #last-child {
+  line-height: 1.1;
+  text-align: center;
+  font-weight: bold;
+  color: var(--hover-white);
+  padding: 40px 0px 40px 0px;
+  font-size: clamp(1rem, 4.5vw, 6.25rem);
+  transform: translateY(100%);
+}
+
+/* Blocco Sponsor */
+#main-content #start-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding-top: 2rem;
+}
+
+#main-content #start-container #start-container-header {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  width: 80%;
+  overflow: hidden;
+}
+
+#main-content #start-container #start-container-header > * {
+  width: 40%;
+  animation: slideUp 0.5s forwards;
+}
+
+#main-content #start-container #sponsor-box {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+}
+
+#main-content #start-container #sponsor-box a {
+  color: var(--nav-border-color);
+  font-family: lexend;
+  font-size: clamp(1rem, 2vw, 1.5rem);
+  margin-bottom: 2rem;
+  text-decoration: none;
+}
+
+#main-content #start-container #sponsor-box img {
+  height: auto;
+  max-width: 100%;
+}
+/* Blocco Sponsor */
+
+/* Blocco Inizia Ora */
+#main-content #start-container #start-box {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem;
+}
+
+#main-content #start-container #start-box a {
+  font-family: lexend;
+  color: var(--hover-white);
+  text-decoration: none;
+  font-size: clamp(1rem, 1.8vw, 4rem);
+  font-weight: bold;
+  border-radius: 6.8rem;
+  padding: 20px 30px 20px 30px;
+  margin: 4rem 0 0 0;
+  background-color: var(--big-button-violet-bg);
+  white-space: nowrap;
+}
+
+.arrow-up-left {
+  height: 2rem;
+  width: 2rem;
+  margin-bottom: -3px;
+}
+
+#main-content #start-container #start-box a:hover {
+  color: var(--rytmo-violet);
+  background-color: var(--hover-white);
+  transition: all 0.4s;
+}
+
+#main-content #start-container #start-box a:hover .arrow-up-left {
+  color: var(--rytmo-violet);
+  transition: all 0.8s;
+  transform: rotate(-220deg);
+}
+
+#main-content #start-container #start-container-header #start-box p {
+  font-size: clamp(11px, 3vw, 1.2rem);
+  color: var(--hover-white);
+  font-family: lexend;
+  text-align: center;
+  margin: 0;
+}
+/* Blocco Inia Ora */
+
+.arrow-up {
+  height: 2rem;
+  width: 2rem;
+  color: white;
+  margin-bottom: -3px;
+}
+
+#main-content #start-container #start-box a:hover .arrow-up {
+  color: var(--rytmo-violet);
+  transition: all 0.8s;
+  transform: rotate(-270deg);
+}
+/* Main Content End */
+
+/* Start Action content */
+.action-container {
+  border-bottom: 1px solid var(--color-border);
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  flex-flow: column nowrap;
+  background-color: var(--color-background);
+  color: white;
+  padding: 5rem 7rem 5rem 7rem;
+  row-gap: 3rem;
+  z-index: 2;
+
+}
+
+.action-container-gradient {
+  /* Start action Background Gradient */
+  display: grid;
+  place-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.action-container-gradient div {
+  margin-top: 10rem;
+  width: 90%;
+  height: 50%;
+  position: absolute;
+  background: linear-gradient(
+    90deg,
+    rgba(29, 1, 244, 0.1) 0%,
+    rgb(179, 10, 209, 0.1) 70%
+  );
+  top: 0;
+  filter: blur(140px);
+  z-index: -1;
+} /* End action Background Gradient */
+
+.action-title-wrapper h1 {
+  font-family: lexend;
+  font-weight: 300;
+  font-size: 4rem;
+}
+
+.action-asset-wrapper {
+  display: flex;
+  flex-flow: row nowrap;
+  column-gap: 3rem;
+}
+
+.action-asset-box {
+  flex: 1;
+}
+
+.action-asset-header {
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 1rem;
+}
+
+.action-number-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+}
+
+.action-number-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 32px;
+  height: 32px;
+  background-color: var(--rytmo-violet);
+  font-family: inter;
+  font-size: 20px;
+}
+
+.action-asset-header h3 {
+  font-family: lexend;
+  font-size: 2.3rem;
+  font-weight: 400;
+  margin: 0;
+  transition: 0.6s ease;
+}
+
+.action-asset-header-animated {
+  background: linear-gradient(
+      90deg,
+      var(--rytmo-violet),
+      #0ff,
+      var(--rytmo-violet)
+    ) -100%/
+    200%;
+  background-clip: text;
+  color: transparent;
+  animation: shimmer 8s linear infinite;
+}
+
+.action-asset-header p {
+  font-family: lexend;
+  color: #e3e3e3;
+  font-size: 1.5rem;
+  max-width: 80%;
+  font-weight: 300;
+}
+
+.action-svg-wrapper {
+  display: flex;
+  flex-flow: row nowrap;
+  column-gap: 3rem;
+  margin-top: 4rem;
+}
+
+.action-svg-wrapper div {
+  flex: 1;
+}
+
+.action-svg-wrapper svg {
+  height: 72px;
+  width: 72px;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+}
+
+.action-svg-animation {
+  /*animation js class*/
+  transform: rotateY(180deg) translateY(-30px);
+}
+
+.action-svg-animation path {
+  /*animation js class*/
+  fill: var(--rytmo-violet) !important;
+}
+
+.action-svg-wrapper div svg path {
+  fill: #e3e3e3;
+}
+
+.action-bar-wrapper {
+  display: flex;
+  flex-flow: row nowrap;
+  column-gap: 3rem;
+}
+
+.action-bar-box {
+  background-color: var(--color-border);
+  height: 1px;
+  width: 100%;
+}
+
+.action-bar-loading-box {
+  height: 1px;
+  width: 0%;
+  background-color: white;
+}
+
+.action-bar-loading-box-animated {
+  /*animation js class*/
+  animation: load 8s linear;
+}
+
+.action-bar-loading-box-animated-fadeOut {
+  /*animation js class*/
+  width: 100%;
+  animation: fadeOut 0.3s ease forwards;
+}
+/* End Action content */
+
+/* Problem Content Start*/
+.problem-container{
+    padding: 7rem 7rem 0 7rem;
+}
+
+.problem-wrapper{
+    color: white;
+    display: flex;
+    flex-flow: row nowrap;
+    font-family: lexend;
+    border: 1px solid var(--color-border);
+    padding: 2rem;
+}
+
+.problem-inner-box-left{
+    display: flex;
+    flex-direction: column;
+}
+
+.problem-logo-box svg{
+    width: 50px;
+    height: 50px;
+}
+
+.problem-inner-box-right{
+    background-image: url(../img/);
+}
+
+/* Problem Content  End*/
+
+/* Brand-Content Start*/
+.brand-container {
+  min-height: 300px;
+  display: flex;
+  width: 100%;
+  background: "#00000";
+  background: linear-gradient(
+    90deg,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(28, 0, 55, 1) 0%
+  );
+  overflow: hidden;
+  margin-top: 4rem;
+}
+
+.brand-title-box {
+  min-width: 30%;
+  padding: 2rem 12rem 2rem 7%;
+  font-weight: 300;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  z-index: 2;
+  background: linear-gradient(
+    90deg,
+    rgba(0, 0, 0, 1) 20%,
+    rgba(28, 0, 55, 1) 90%,
+    rgba(28, 0, 55, 0) 100%
+  );
+}
+.brand-title-text-box p {
+  color: white;
+  font-family: lexend;
+  font-weight: 300;
+  font-size: 40px;
+}
+
+.brand-title-button-box {
+  display: flex;
+  margin-top: 2rem;
+}
+
+.brand-title-button-box a {
+  display: flex;
+  column-gap: 0.8rem;
+  background-color: white;
+  color: black;
+  text-decoration: none;
+  font-family: neue;
+  font-size: 1.3rem;
+  font-weight: 100;
+  padding: 0.625rem 0.938rem;
+  position: relative;
+  transition: 0.33s ease;
+  z-index: 2;
+}
+
+.brand-title-button-box a::before {
+  background: var(--rytmo-violet);
+  content: "";
+  inset: 0;
+  position: absolute;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.33s cubic-bezier(0.4, 0, 0.2, 1);
+  z-index: -1;
+}
+
+.brand-title-button-box a:hover::before {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+
+.brand-title-button-box a:hover {
+  color: white;
+}
+
+.brand-title-button-box a span {
+  transition: 0.33s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.brand-title-button-box a span svg {
+  width: 22px;
+  height: 22px;
+  margin-bottom: -3px;
+}
+
+.brand-title-button-box a:hover span:first-child {
+  transform: translateX(3px);
+}
+
+.brand-title-button-box a:hover span:last-child {
+  transform: translateX(-3px);
+}
+
+.brand-carousel-box {
+  display: grid;
+  place-items: center;
+  width: 100%;
+  white-space: nowrap;
+  z-index: 1;
+}
+
+.brand-carousel-slider {
+  display: flex;
+  column-gap: 10rem;
+  white-space: nowrap;
+  animation: scroll 60s linear infinite;
+}
+
+.brand-carousel-box div svg {
+  height: 200px;
+  width: 200px;
+}
+
+.brand-carousel-box div svg path {
+  fill: #e5e7eb !important;
+}
+
+.brand-carousel-box div svg rect {
+  fill: #e5e7eb !important;
+}
+/* Brand Content End */
+
+@media (max-width: 600px) {
+  .problem-inner-box-left {
+    padding: 2rem 1.5rem 3rem 1.5rem;
+    background-image: url("../img/studio.jpg");
+    background-size: cover;
+  }
+  .problem-title-box {
+    backdrop-filter: blur(1px);
+  }
+  .problem-logo-box {
+    padding-bottom: 1rem;
+  }
+  .problem-logo-box span svg {
+    height: 30px;
+  }
+  .problem-logo-box-text {
+    font-size: 12px;
+  }
+  .problem-inner-box-left p {
+    max-width: 100%;
+    font-size: 14px;
+    margin-top: 5px;
+  }
+  .problem-container {
+    flex-direction: column;
+  }
+}

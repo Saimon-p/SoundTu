@@ -1,0 +1,25 @@
+        <div id="christmas-ad"><p>❄️ Sconto Invernale fino al 20% usando il codice "FEDE" ❄️</p></div>
+            <?php include 'Components/navbar.php'; ?>
+        <div id="main-content"> <!-- Contenuto pagina -->
+            
+
+        <div id="slogan-box"> <!-- Blocco slogan -->
+            <div class="slogan-animation-p-box"><p id="first-child">Tutto ciò che ti serve per registrare la tua musica</p></div>
+            <div class="slogan-animation-box"><p id="last-child">INSIEME PER UNA MUSICA ACCESSIBILE<br class="mobile-br"> A TUTTI</p></div>
+        </div><!-- Blocco slogan -->
+
+        <div id="start-container"> <!-- Blocco inizia ora -->
+            <div id="start-container-header">
+            <div class="slogan-content-box" id="sponsor-box"> <!-- Blocco sponsor -->
+                <a href="https://www.redbull.com/it-it/">SPONSOR</a>
+              <img src="img/580b57fcd9996e24bc43c1e8.webp" alt="">
+            </div> <!-- Blocco sponsor -->
+
+            <div class="slogan-content-box" id="start-box"> <!-- blocco inizia ora button -->
+              <a href="login.php"><span class="arrow-span arrow-up-left"></span>  INIZIA ORA</a>
+                <p>Dai voce alle tue idee: strumenti di registrazione pronti per te, senza acquisto.</p>
+            </div> <!-- blocco inizia ora button -->
+            </div>
+        </div><!-- Blocco inizia ora -->
+
+    </div> <!-- Contenuto pagina -->

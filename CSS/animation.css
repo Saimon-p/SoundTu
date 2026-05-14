@@ -1,0 +1,79 @@
+@keyframes ad-slider {
+   100% {
+    transform: translateX(-100%);
+   }
+}
+
+@keyframes slideInLeft {
+    from {
+        transform: translateX(-100%);
+        opacity: 1;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideInRigth {
+    from {
+        transform: translateX(100%);
+        opacity: 1;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideOutLeft {
+    from {
+        transform: translateX(0);
+        opacity: 1;
+    }
+    to {
+        transform: translateX(-100%);
+        opacity: 1;
+    }
+}
+
+@keyframes slideUp {
+    from{
+        transform: translateY(100%);
+    } to{
+        transform: translateY(0%);
+    }
+}
+
+@keyframes slideDown {
+    from{
+        transform: translateY(0%);
+    } to{
+        transform: translateY(100%);
+    }
+}
+
+@keyframes shimmer { to { background-position: 100% } }
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+@keyframes load {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
+@keyframes fadeOut {
+    from { opacity: 1; }
+  to { opacity: 0; }
+}

@@ -1,0 +1,209 @@
+        .main-wrapper{
+            width: 100%;
+            background-image: url(../img/Immagine2.webp);
+            background-repeat: repeat;
+            background-position: top left;
+            background-size: cover;
+            display: flex;
+            justify-content: flex-end;
+
+        }
+
+        .login-container{
+            width: 50%;
+            padding: 5rem 0 13rem 0;
+            background-color: white;
+            height: inherit;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            animation: slideInRigth 0.5s ease-out;
+        }
+
+        @keyframes slideInRigth {
+        from {
+        transform: translateX(100%);
+        opacity: 1;
+        }
+        to {
+        transform: translateX(0);
+        opacity: 1;
+        }
+        }
+
+        @keyframes zoomIn {
+        0% {
+            opacity: 0;
+            transform: scale3d(.3, .3, .3)
+        }
+        50% {
+            opacity: 1
+        }
+        }
+
+        .login-logo-box{
+            text-align: center;
+        }
+
+        .login-logo-box h3{
+            font-family: lexend;
+            font-size: 1.4rem;
+        }
+
+        .login-logo-box a svg{
+            height: 100px;
+        }
+
+        .login-logo-box a svg path{
+            fill: var(--rytmo-violet);
+        }
+
+        .login-form-box{
+            width: 100%;
+            max-width: 500px;
+        }
+
+        .login-form-box form{
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            padding: 2rem;
+            border-radius: 5px;
+            background-color: var(--hover-white);
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        }
+        
+        .method-box{
+            width: 100%;
+        }
+
+        .method-box a{
+            --border-width: 1px;
+            position: relative;
+            display: flex;
+            align-items: center;
+            width: 100%;
+            font-size: 1.2rem;
+            font-family: lexend;
+            text-decoration: none;
+            color: black;    
+            border-radius: 5px;
+            background-color: var(--hover-white);
+            border: 1px solid black;
+        }
+
+        .method-box a:nth-child(2){
+            margin-top: 2rem;
+        }
+
+        .method-box a span svg{
+            padding: 1rem;  
+        }
+
+
+        .method-box a span svg{
+            width: 40px;
+            height: 40px;
+        }
+
+        .method-box a:hover span svg{
+            color: white;
+        }
+
+        .method-box a:hover span svg path{
+            fill: white;
+        }
+        .method-box a:hover{
+            border-color: black;
+            background-color: #06C;
+                        transition: 0.2s ease;
+        }
+
+        .method-box a:hover .text{
+            color: white;
+            transition: 0.2s ease;
+        }
+        
+        .remember-box{
+            display: flex;
+            flex-flow: row nowrap;
+            width: 100%;
+            height: 90px;
+            align-items: center;
+            font-family: lexend;
+            font-weight: 600;
+        }
+
+        input{
+            margin-bottom: 2px;
+            margin-right: 1rem;
+        }
+
+        .what-box{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+        }
+
+        .what-box a{
+            color: black;
+            text-decoration: none;
+            font-family: inter;
+            font-weight: 200;
+            background: 
+            linear-gradient(currentColor 0 0) 
+            var(--p, 0) 100% /var(--d, 0) 1px 
+            no-repeat;
+            transition: 0.3s, background-position 0s 0.3s;
+        }
+        
+        .what-box a:nth-child(1){
+            margin-right: 1rem;
+        }
+
+        .what-box a:hover{
+            --d: 100%;
+            --p: 100%
+        }
+
+        .login-back-box{
+            margin: 1rem 0 0 1rem;
+        }
+
+        .login-back-box a{
+            text-decoration: none;
+            color: black;
+            font-family: inter;
+                        background: 
+            linear-gradient(currentColor 0 0) 
+            var(--p, 0) 100% /var(--d, 0) 1px 
+            no-repeat;
+            transition: 0.3s, background-position 0s 0.3s;
+        }
+
+        .login-back-box a span svg{
+            padding-right: 10px;
+            margin-bottom: -2px;
+        }
+
+        .login-back-box a:hover{
+            --d: 100%;
+            --p: 100%
+        }
+
+
+        
+        @media (max-width: 900px){
+        .login-container{padding: 3rem 1.5rem 5rem 1.5rem; margin: 2rem 0 3rem 0; border-radius: 8px; animation: zoomIn 0.3s ease; width: 80%;}
+        .login-form-box{width: 100%;}
+        .main-wrapper{justify-content: center;}
+        .login-logo-box h3{font-size: 14px;}
+        .method-box a{ font-size: 14px; background-color: #06C; color: white;} 
+        .method-box a span svg{width: 25px; height: 25px;}
+        .method-box a span svg path{fill: white;}
+        }
+
+        
+       
+

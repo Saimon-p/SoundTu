@@ -1,0 +1,229 @@
+.main-container{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.title-box{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 3rem 0;
+    font-family: lexend;
+}
+
+.title-box h1{
+    font-size: clamp(1.2rem, 2.16vw, 3rem);
+    letter-spacing: -1px;
+}
+
+.title-box p{
+    padding: 2rem 2rem;
+    font-size: clamp(15px, 1.1vw, 2rem);
+}
+
+.catalogue-container{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.catalogue-title-box{
+    height: 90px;
+    text-align: center;
+    font-family: lexend;
+    font-weight: 300;
+    font-size: clamp(16px, 2vw, 3rem);
+}
+
+.catalogue-products-container{
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    margin-bottom: 10rem;
+    overflow: scroll;
+}
+
+.catalogue-products-box{
+    width: 100%;
+    min-width: 200px;
+    overflow: visible;
+    margin-right: 1rem;
+    border-radius: 1rem;
+    overflow: hidden;
+    border: 1px solid var(--nav-border-color);
+
+}
+
+.catalogue-products-box:first-child{
+    margin-left: 1rem;
+}
+
+.product-img-box{
+    width: 100%;
+    height: 200px;
+    padding: 3rem 0 3rem 0;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px -40px 30px -28px inset;
+}
+
+.product-img-box img{
+    width: 100%;
+    height: 100%;
+    max-height: 200px;
+    display: block;
+    object-fit: contain;
+    mix-blend-mode: multiply;
+}
+
+.product-desc-box{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 80px;
+    font-family: lexend;
+    background-color: rgb(97, 247, 247);
+}
+
+.product-desc-title-box{
+    padding-left: 1rem;
+}
+
+.product-desc-title-box h3{
+    white-space: nowrap;
+    margin: 0;
+}
+
+.white{
+    color: white;
+}
+
+.product-desc-title-box p{
+    margin: 0;
+    white-space: nowrap;
+}
+
+.product-desc-shop-box{
+    padding: 0 1rem
+}
+
+.product-desc-shop-box span svg{
+    height: 25px;
+    width: 25px;
+}
+
+.price-wrapper{
+    display: flex;
+    flex-flow: row nowrap;
+    width: 100%;
+    align-items: center;
+    margin-bottom: 7rem;
+}
+
+.price-container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.price-container h1{
+    font-size: clamp(2rem, 2.4vw, 3rem);
+    margin-bottom: 3rem;
+}
+
+.price-container p:last-child{
+    margin-bottom: 6rem;
+}
+
+.price-container h3{
+    margin-top: 4rem;
+    margin-bottom: 6rem;
+}
+
+.price-box{
+    font-family: lexend;
+    height: 400px;
+    border-right: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    align-items:    center;
+    justify-content: center;
+    padding: 0rem 3rem;
+
+}
+
+.button-box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.button-box button{
+      outline: none;
+      border: none;
+      background-color: transparent;
+      color: var(--rytmo-violet);
+      border: 1px solid var(--rytmo-violet);
+      width: 60%;
+      height: 50px;
+      border-radius: 5px;
+      font-family: "inter", sans-serif;
+      cursor: pointer;
+      font-size: clamp(12px, 1vw, 2rem);
+      transition: 0.2s ease;
+}
+
+.button-box button:hover{
+    background-color: var(--rytmo-violet);
+    color: white;
+    border: 1px solid var(--hover-white);
+}
+
+.plus .button-box button{
+    background-color: var(--rytmo-violet);
+    color: white;
+}
+
+.price-title-box{
+    text-align: center;
+    font-family: lexend;
+    font-size: clamp(12px, 2vw, 2rem);
+    margin-bottom: 7rem;
+}
+
+@media (max-width: 600px){
+    .price-wrapper{
+        flex-direction: column;
+    }
+
+    .title-box p{
+        text-align: center;
+    }
+
+    .price-title-box{
+        margin-bottom: 2rem;
+        font-size: 10px;
+        padding: 0rem 2rem;
+    }
+
+    .price-container p:last-child{
+        text-align: center;
+        padding-top: 2rem;
+        margin-bottom: 0;
+    }
+
+    .basic{
+        border-right: 0;
+        border-bottom: 1px solid black;
+        margin-bottom: 3rem;
+        padding-bottom: 3rem;
+    }
+
+    .plus .price-box{
+        text-align: center;
+    }
+    
+}
+
