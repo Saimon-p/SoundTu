@@ -39,7 +39,7 @@ document.querySelectorAll(".cart-logo").forEach(el => { el.innerHTML = cart;});
 // // Logo-slider
 
 
-
+// Action Content Animation Start
 const actionSvg = document.querySelectorAll(".action-svg-wrapper div svg");
 const actionBarWrapper = document.querySelector(".action-bar-wrapper");
 const actionBarLoading = document.querySelectorAll(".action-bar-loading-box");
@@ -51,7 +51,7 @@ actionBarLoading[0].classList.add("action-bar-loading-box-animated");
 actionAssetText[0].classList.add("action-asset-header-animated");
 
 actionBarWrapper.addEventListener("animationend", (event) => {
-  if (event.animationName === "load" && event.target === actionBarLoading[currentIndex]) {
+  if (event.animationName === "loadX" && event.target === actionBarLoading[currentIndex]) {
     actionSvg[currentIndex].classList.remove('action-svg-animation');
     actionBarLoading[currentIndex].classList.remove("action-bar-loading-box-animated");
     actionBarLoading[currentIndex].classList.add("action-bar-loading-box-animated-fadeOut");
@@ -72,3 +72,40 @@ actionBarWrapper.addEventListener("animationend", (event) => {
     actionAssetText[currentIndex].classList.add('action-asset-header-animated');
     }
 });
+// Action Content Animation End
+
+// Problem Content Gradient Animation
+const glowBoxes = document.querySelectorAll('.problem-glow-container div')
+
+glowBoxes[0].addEventListener('animationend', (event) =>{
+  if (event.animationName.includes('unload')) {
+    glowBoxes.forEach((el) => {
+      el.classList.remove(el.classList[1]);
+      if (el.classList.value == "top" || el.classList.value == "bottom") {
+        el.classList.add("loadX-animation");
+      } else {
+        el.classList.add("loadY-animation");
+      }
+    });
+    
+  } else {
+    glowBoxes.forEach((el) => { el.classList.remove(el.classList[1]);});
+    for (let i = 0; i < glowBoxes.length; i++) {
+      switch (glowBoxes[i].classList[0]) {
+        case "top":
+          glowBoxes[i].classList.add("unloadX-top-animation");
+          break;
+        case "bottom":
+          glowBoxes[i].classList.add("unloadX-bottom-animation");
+          break;
+        case "left":
+          glowBoxes[i].classList.add("unloadY-left-animation");
+          break;
+        case "right":
+          glowBoxes[i].classList.add("unloadY-right-animation");
+          break;
+      }
+    }
+  }
+})
+

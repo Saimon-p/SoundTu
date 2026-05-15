@@ -1,5 +1,5 @@
 @keyframes ad-slider {
-  100% {
+  100%{
     transform: translateX(-100%);
   }
 }
@@ -70,12 +70,39 @@
   }
 }
 
-@keyframes load {
+@keyframes loadX {
   0% {
     width: 0%;
   }
   100% {
     width: 100%;
+  }
+}
+
+@keyframes unloadX {
+  0% {
+    width: 100%;
+  }
+  100% {
+    width: 0%;
+  }
+}
+
+@keyframes loadY {
+  0% {
+    height: 0%;
+  }
+  100% {
+    height: 100%;
+  }
+}
+
+@keyframes unloadY {
+  0% {
+    height: 100%;
+  }
+  100% {
+    height: 0%;
   }
 }
 

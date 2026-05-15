@@ -352,7 +352,7 @@ body {
 }
 
 .action-bar-loading-box-animated {  /*animation js class*/
-  animation: load 8s linear;
+  animation: loadX 8s linear;
 }
 
 .action-bar-loading-box-animated-fadeOut {  /*animation js class*/
@@ -363,7 +363,8 @@ body {
 
 /* Problem Content Start*/
 .problem-container{
-  margin: 7rem;
+  padding: 7rem;
+  overflow: hidden;
 }
 
 .problem-wrapper{
@@ -372,12 +373,82 @@ body {
   color: white;
   font-family: lexend;
   min-height: 700px;
+  position: relative;
+  z-index: 1;
+}
+
+.problem-glow-container{
+  background-color: transparent;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+}
+
+.problem-glow-container div{
+  position: absolute;
+  filter: blur(35px);
+}
+
+.top{
+  height: 50px;
+  width: 0;
+  background: linear-gradient(90deg,rgb(74, 7, 136) 0%, rgb(6, 125, 92) 100%);
+}
+
+.right{
+  right: 0;
+  bottom: 0;
+  height: 0;
+  width: 50px;
+  background: linear-gradient(180deg,rgb(74, 7, 136) 0%, rgb(6, 125, 92) 100%);
+}
+
+.bottom{
+  right: 0;
+  bottom: 0;
+  height: 50px;
+  width: 0;
+  background: linear-gradient(90deg,rgb(6, 125, 92) 0%, rgb(74, 7, 136) 100%);
+}
+
+.left{
+  height: 0px;
+  width: 50px;
+    background: linear-gradient(180deg, rgb(6, 125, 92) 0%, rgb(74, 7, 136) 100%);
+}
+
+.loadX-animation{
+  animation: loadX 12s ease-in-out forwards;
+} 
+
+.loadY-animation{
+  animation: loadY 12s ease-in-out forwards;
+} 
+
+.unloadX-top-animation{
+  right: 0;
+  animation: unloadX 12s ease-in-out forwards;
+}
+
+.unloadX-bottom-animation{
+  left: 0;
+  animation: unloadX 12s ease-in-out forwards;
+}
+
+.unloadY-left-animation{
+  bottom: 0;
+  animation: unloadY 12s ease-in-out forwards;
+}
+
+.unloadY-right-animation{
+  top: 0;
+  animation: unloadY 12s ease-in-out forwards;
 }
 
 .problem-inner-box-left{
   flex: 3;
-  /* background: radial-gradient(circle at top, rgba(0, 0, 255, 0.123) 0%, transparent 70%);  */
-  background: radial-gradient(circle at center, rgba(0, 0, 255, 0.082) 0%, transparent 70%);
+  background-color: var(--color-background);
 }
 
 .problem-title-box{
@@ -436,11 +507,7 @@ body {
   flex: 1.8;
   background-image: url(../img/studio.jpg);
   background-size: cover;
-/* box-shadow: rgba(240, 46, 170, 0.4) -5px 5px, rgba(240, 46, 170, 0.3) -10px 10px, rgba(240, 46, 170, 0.2) -15px 15px, rgba(240, 46, 170, 0.1) -20px 20px, rgba(240, 46, 170, 0.05) -25px 25px; */
-  box-shadow: rgba(230, 38, 230, 0.4) 5px 5px, rgba(230, 38, 230, 0.3) 10px 10px, rgba(230, 38, 230, 0.2) 15px 15px, rgba(230, 38, 230, 0.1) 20px 20px, rgba(230, 38, 230, 0.05) 25px 25px;
 }
-
-
 /* Problem Content  End*/
 
 /* Brand-Content Start*/
